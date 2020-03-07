@@ -25,7 +25,7 @@ sudo python3 tally-lights.py
 How it Works
 ------------
 
-The script connects to Vmix via a TCP socket. Vmix sends a message any time the
+The script connects to vMix via a TCP socket. vMix sends a message any time the
 output/preview gets updated. The script parses this for the camera statuses and
 displays it on the appropriate strip.
 
