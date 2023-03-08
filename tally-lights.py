@@ -49,12 +49,12 @@ s.send(b'SUBSCRIBE TALLY\r\n')
 while True:
     data = s.recv(1024)
     if data[:8] == b'TALLY OK':
-        red = data[9:10]
-        center = data[10:11]
-        blue = data[11:12]
-        update(blue, 0)
-        update(center, 1)
-        update(red, 2)
+        cam1 = data[9:10]
+        cam6 = data[14:15]
+        cam2  = data[10:11]
+        update(cam1, 0)
+        update(cam2, 1)
+        update(cam3, 2)
     else:
         pixels.fill((30,15,00))
         pixels.show()
