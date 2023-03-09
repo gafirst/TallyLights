@@ -52,9 +52,9 @@ while True:
         cam1 = data[9:10]
         cam6 = data[14:15]
         cam2  = data[10:11]
-        update(cam1, 0)
-        update(cam2, 1)
-        update(cam3, 2)
+        update(cam2, 0)
+        update(cam6, 1)
+        update(cam1, 2)
     else:
         pixels.fill((30,15,00))
         pixels.show()
